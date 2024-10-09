@@ -4,7 +4,7 @@ on:
 jobs:
   buildandDeploy:
     env:
-      imagename: "mavenimage"
+      imagename: "mavenimage2"
     runs-on: ubuntu-latest
     steps:
      - name: Clone the code
