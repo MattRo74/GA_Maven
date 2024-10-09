@@ -4,3 +4,7 @@ on:
 jobs:
   buildJob:
    uses: ./.github/workflows/main.yml
+   secrets:
+    DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+    DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+     
