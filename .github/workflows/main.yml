@@ -1,6 +1,11 @@
 name: CI/CD workflow
 on:
  workflow_call:
+  secrets:
+   DOCKERHUB_USERNAME:
+    required: true
+   DOCKERHUB_PASSWORD:
+    required: true
 jobs:
   buildandDeploy:
     env:
